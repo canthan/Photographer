@@ -1,0 +1,164 @@
+html * {
+    margin:0;
+    box-sizing: border-box;
+    color: black;
+}
+
+html{
+    font-size:10px;
+    min-width:320px;
+    background-color:white;
+    font-family: 'Arial', sans-serif ;
+}
+
+body {
+    width: 100%;
+    background-color: white;
+    margin:0 auto;
+}
+
+section {
+    padding-bottom: 15px;
+}
+
+nav{
+    padding:2em;
+}
+
+h1{
+    text-align: center;
+    margin: 0 auto;
+}
+
+section h1{
+    text-transform: uppercase;
+    background-size: 200px 5px;
+    padding-bottom: 5px;
+    background-position:center bottom;
+    background-repeat: no-repeat;
+    background-image: url(../images/section.png);
+}
+
+section:nth-of-type(even){
+    background-color: #dfe1df;
+}
+
+h2{
+    text-align: center;
+}
+
+@media (min-width:768px){
+    #home h1{font-size: 3em;}
+    #home h2{font-size: 2em;}
+}
+
+@media (max-width:767px){
+    #home h1{font-size: 2em;}
+    #home h2{font-size: 1.2em;}
+}
+
+#myCarousel img{
+    width:100%;
+    height: auto;
+}
+
+.johnDoe{
+    display: block;
+    position:absolute;
+    top:20%;
+    left:0;
+    width:100%;
+}
+
+#menu {
+    background-color: rgba(0,0,0,0.5);
+    border:none;
+    text-transform: uppercase;
+    padding:0;
+    z-index: 5;
+}
+
+#menu a {
+    color:white;
+    transition: 0.5s all;
+}
+
+#menu a:hover{
+    font-size:1.1em;
+    text-decoration: underline;
+    background-color: rgba(0,0,0,0.5); ;
+}
+
+#home h1, #home h2{
+    font-family: 'Pacifico', cursive;
+    text-shadow: 2px 2px 2px white,
+                 2px -2px 2px white,
+                -2px 2px 2px white,
+                -2px -2px 2px white;
+}
+
+#about p{
+    text-align: justify;
+    text-indent: 3em;
+}
+
+.about img, #gear img{
+    visibility: hidden;
+}
+
+section p{
+    text-align: justify;
+    text-indent: 3em;
+}
+
+#galleries img{
+    margin: 5px;
+    transition: 1s all;
+}
+
+.captionImg{
+    position: absolute;
+    top:30%;
+    width:100%;
+    background-color: rgba(255,255,255,0.6);
+    display: none;
+}
+
+.captionImg *{
+    text-align: center;
+    transition: 1s all;
+}
+
+#galleries a:hover{
+    filter: grayscale(100%);
+}
+
+#contact p{
+    text-align: center;
+}
+
+#contact a{
+    text-decoration: underline;
+}
+
+#about .jumbotron, #gear .jumbotron, #contact .jumbotron{
+    margin:10px;
+    padding:20px;
+}
+
+#about .jumbotron p, #gear .jumbotron p, #contact .jumbotron p {
+    font-size: 16px;
+    text-indent: 0;
+    text-align: left;
+}
+
+footer{
+    padding-top:20px;
+    height:60px;
+    text-align: center;
+}
+
+#testP, #testP2{
+    display: none;
+}
+
